@@ -1,0 +1,28 @@
+{% extends "./complementos/perfil.html" %} {% load staticfiles %} {% block css %}
+
+ {% endblock css %} {% block content %}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+       
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <!--<a href="" class="btn btn-primary">Cargar</a>-->
+        </div>
+    </div>
+</div>
+<div class="row" id="app">
+    <div class="animated bounceInUp">
+        <sala></sala>
+    </div>    
+</div>
+{% endblock %} 
+{% block js %}
+<script>
+ 
+</script>
+
+<!-- archivo vue js -->
+<script src="{% static 'apps-compiler/chat.js' %}"></script>
+
+{% endblock js %}

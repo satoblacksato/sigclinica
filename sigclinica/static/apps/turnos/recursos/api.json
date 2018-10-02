@@ -1,0 +1,7 @@
+{
+    "pacientes": "/pacientes/api/pacientes/",
+    "pacientes_select": "/pacientes/api/select/",
+    "empleados": "/empleados/api/empleados/",
+    "turnos": "/turnos/api/turnos/",
+    "turnos_dia": "/turnos/api/turnos-actuales/"
+}

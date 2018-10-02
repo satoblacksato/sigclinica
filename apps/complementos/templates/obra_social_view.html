@@ -1,0 +1,30 @@
+{% extends "./complementos/perfil.html" %} {% load staticfiles %} {% block css %}
+
+ {% endblock css %} {% block content %}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Complementos</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <strong>Carga de Obra Sociales</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <!--<a href="" class="btn btn-primary">Cargar</a>-->
+        </div>
+    </div>
+</div>
+<div class="row" id="app">
+    <div class="animated bounceInUp">
+        <listado></listado>
+    </div>    
+</div>
+{% endblock %} {% block js %}
+
+
+<!-- archivo vue js -->
+<script src="{% static 'apps-compiler/obraSocial.js' %}"></script>
+
+{% endblock js %}

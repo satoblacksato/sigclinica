@@ -1,0 +1,49 @@
+{% extends "./complementos/perfil.html" %} {% load staticfiles %} {% block css %}
+
+    <link href="{% static 'css/plugins/datapicker/datepicker3.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/iCheck/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+{% endblock css %} {% block content %}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Turnos</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <strong>Ver turnos del día</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-8">
+        <div class="title-action">
+            <!--<a href="" class="btn btn-primary">Cargar</a>-->
+        </div>
+    </div>
+</div>
+<div class="row" id="app">
+ <div class="animated bounceInUp">
+    <turno_lista></turno_lista>
+ </div>   
+</div>
+{% endblock %} {% block js %}
+
+<!-- Mainly scripts -->
+<script src="{% static 'js/plugins/fullcalendar/moment.min.js' %}"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="{% static 'js/plugins/pace/pace.min.js' %}"></script>
+
+<!-- jQuery UI  -->
+<script src="{% static 'js/plugins/jquery-ui/jquery-ui.min.js' %}"></script>
+
+<!-- Archivo Vue -->
+<script src="{% static 'apps-compiler/turnos.js' %}"></script>
+
+<script>
+
+</script>
+
+{% endblock js %}
+
+

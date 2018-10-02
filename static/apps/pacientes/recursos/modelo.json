@@ -1,0 +1,14 @@
+{
+    "nombre": "",
+    "apellido": "",
+    "documento": "",
+    "foto": null,
+    "tipo_documento": "",
+    "telefono_fijo": "",
+    "telefono_celular": "",
+    "observacion": "",
+    "obra_social": "",
+    "edad": "",
+    "domicilio": "",
+    "numero_afiliado": ""
+}

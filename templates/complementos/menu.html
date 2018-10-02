@@ -1,0 +1,49 @@
+{% extends "./complementos/footer.html" %} {% block menu %}
+<li>
+    <a href="#"><i class="fa fa-user-md"></i> <span class="nav-label">Principal</span> <span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level collapse">
+        <li><a href="/pacientes/alta/">Pacientes</a></li>
+    </ul>
+</li>
+<li>
+    <a href="#"><i class="fa fa-calendar"></i> <span class="nav-label">Turnos</span> <span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level collapse">
+        <li><a href="/turnos/alta/">Asignar Turno</a></li>
+        <li><a href="/turnos/espontaneo/">Turno Espontáneo</a></li>
+        {% if request.session.categoria == 'medico' or request.session.categoria == 'programador' %}
+            <li><a href="/turnos/listado/">Ver turnos del día</a></li>
+        {% endif %}    
+    </ul>
+</li>
+<li>
+    <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> <span class="nav-label">Chat</span> <span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level collapse">
+        <li><a href="/chat/sala/">Sala de Chat</a></li>
+    </ul>
+</li>
+{% if request.session.categoria == 'medico' or request.session.categoria == 'programador' %}
+    <li>
+        <a href="#"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+ <span class="nav-label">Notas</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="/notas/">Ver notas</a></li>
+        </ul>
+    </li>
+{% endif %}
+{% if request.session.categoria == 'medico' or request.session.categoria == 'programador' %}
+    <li>
+        <a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i>
+        <span class="nav-label">Historias Clínicas</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="/historia/clinica/informe/">ver historias clínicas</a></li>
+        </ul>
+    </li>
+{% endif %}
+<li>
+    <a href="#"><i class="fa fa-plug"></i> <span class="nav-label">Complementos</span> <span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level collapse">
+        <li><a href="/complementos/tipo/documento/">Tipos de Documentos</a></li>
+        <li><a href="/complementos/obra/social/">Obra Sociales</a></li>
+    </ul>
+</li>
+{% endblock menu %}

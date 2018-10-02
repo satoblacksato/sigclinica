@@ -1,0 +1,5 @@
+{
+    "pacientes": "/pacientes/api/pacientes/",
+    "empleados": "/empleados/api/empleados/",
+    "obrasociales": "/complementos/api/obrasocial/"
+}

@@ -1,0 +1,20 @@
+{% extends "./complementos/base.html" %} {% block footer %}
+{% load staticfiles %}
+ <!-- pequeña ventana de chat -->
+<div id="ventana">
+     <ventana-chat></ventana-chat>
+</div>
+ <!-- pequeña ventana de chat -->   
+<div class="footer">
+    <div class="pull-right">
+
+    </div>
+    <div>
+        <strong>Copyright</strong> Alan Beck &copy; 2017
+    </div>
+</div>
+
+ <!-- pequeña ventana de chat -->
+<script src="{% static 'apps-compiler/ventanaChat.js' %}"></script>
+ <!-- pequeña ventana de chat -->       
+{% endblock %}
